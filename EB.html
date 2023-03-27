@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Experience</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            padding:10px;
+           
+        }
+        .left {
+            height: 900px; 
+            width: 800px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            border-radius: 5%;
+        }
+        .right {
+            height: 1000px; 
+            width: 1000px;
+            background-color: rgba(255, 255, 255, 0.5);
+            margin-left: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5%;
+        }
+        .smallt{
+            height: 100px; 
+            width: 2500px;
+            background-color: rgba(69, 87, 110, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+                width: 800px;
+                height: 500px;
+                /*溢出部分隐藏*/
+                overflow: hidden;
+                margin: 30px;
+            }
+        .box img{
+            width: 640px;
+            height: 400px;
+        }
+        li{
+            list-style: none;
+            width: 155px;
+            height: 400px;
+            float: left;
+            border-left: 5px solid white;
+            box-shadow: -5px 0px 10px black;
+            transition: all 0.5s linear;
+        }
+        /*鼠标悬浮在ul上，让ul变小*/
+        .box ul:hover li{
+            width: 35px;
+        }
+        /*鼠标悬浮到某个li上，让li变大*/
+        .box ul li:hover{
+            width: 635px;
+        }
+        td{
+            width: 50px;
+            height: 40px;
+            font-size: 30px;
+            color:rgb(255, 255, 255,0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <p class="smallt" style="font-size: 50px; color: aliceblue;">
+        Educational Background
+    </p>
+    <div class="content">
+        <div class="left">
+            <div class="university">
+                <table style="border: 1px; border-color: rgb(255, 255, 255); border: solid; margin: 30px; float: center; background-color: rgba(69, 87, 110, 1); ">
+                    <tr style="width: 800px; height: 40px;"> 
+                        <td align="center" style="width: 230px; height: 50px; ; ">
+                            Time
+                        </td>
+                        <td align="center" style="width: 230px; height: 50px;">
+                            University
+                        </td>
+                        <td align="center" style="width: 230px; height: 50px">
+                            Degree
+                        </td>
+                    </tr>
+                    <tr style="width: 750px; height: 40px;"> 
+                        <td align="center" style="width: 200px; height: 150px">
+                            2017-2021
+                        </td>
+                        <td align="center" style="width: 200px; height: 150px">
+                            China Agricultural University
+                        </td>
+                        <td align="center" style="width: 200px; height: 150px">
+                            Bachelor
+                        </td>
+                    </tr>
+                </table>
+                <table style="border: 1px; border-color: rgb(255, 255, 255); border: solid; margin: 30px; background-color: rgba(69, 87, 110, 1)">
+                    <tr>
+                        <td align="center" style="width: 230px; height: 50px">
+                            Time
+                        </td>
+                        <td align="center" style="width: 230px; height: 50px">
+                            University
+                        </td>
+                        <td align="center" style="width: 230px; height: 50px">
+                            Degree
+                        </td>
+                    </tr>
+                    <tr style="width: 750px; height: 40px;"> 
+                        <td align="center" style="width: 230px; height: 150px">
+                            2022-now
+                        </td>
+                        <td align="center" style="width: 230px; height: 150px">
+                            Kyoto University
+                        </td>
+                        <td align="center" style="width: 230px; height: 150px">
+                            master
+                        </td>
+                    </tr>
+                </table>
+            
+
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="box">
+                <ul>
+                    <li><img src="CAU\屏幕截图 2023-03-08 094214.jpg" alt="China Agricultural University"></li>
+                    <li><img src="CAU\屏幕截图 2023-03-08 094236.jpg" alt="China Agricultural University"></li>
+                    <li><img src="CAU\屏幕截图 2023-03-08 094300.jpg" alt="China Agricultural University"></li>
+                    <li><img src="CAU\屏幕截图 2023-03-08 094321.jpg" alt="China Agricultural University"></li>
+                    <li><img src="CAU\屏幕截图 2023-03-08 095319.jpg" alt="China Agricultural University"></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><img src="KU\8CE0B6FB1534DE4E6A6C76B92384E3F2.png" alt="Kyoto University"></li>
+                    <li><img src="KU\93958FD2BAB56FE07E2205230311020F.png" alt="Kyoto University"></li>
+                    <li><img src="KU\CEA6B167C7193D6E1F546E959EAE5551.png" alt="Kyoto University"></li>
+                    <li><img src="KU\微信图片_20230308094936.jpg" alt="Kyoto University"></li>
+                    <li><img src="KU\微信图片_20230308094946.jpg" alt="Kyoto University"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
